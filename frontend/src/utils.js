@@ -7,3 +7,5 @@ export const parseRequestUrl = () => {
         action: request[3],
     };
 };
+
+export default parseRequestUrl;

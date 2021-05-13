@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     products: [
         {
             _id: '1',
@@ -30,7 +30,7 @@ module.exports = {
             price: 22,
             brand: 'Herbapol',
             rating: 4.5,
-            numReviews: 10,
+            numReviews: 20,
             countInStock: 6,
         },
         {
@@ -52,7 +52,7 @@ module.exports = {
             price: 23,
             brand: 'Herbapol',
             rating: 5,
-            numReviews: 10,
+            numReviews: 15,
             countInStock: 6,
         },
         {
@@ -63,7 +63,7 @@ module.exports = {
             price: 8,
             brand: 'Herbapol',
             rating: 4,
-            numReviews: 10,
+            numReviews: 12,
             countInStock: 6,
         },
     ],
