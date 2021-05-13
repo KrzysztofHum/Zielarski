@@ -10,6 +10,7 @@ export default {
             rating: 4.5,
             numReviews: 10,
             countInStock: 6,
+            description: 'Bardzo dobre ziolo',
         },
         {
             _id: '2',
@@ -21,6 +22,7 @@ export default {
             rating: 3.5,
             numReviews: 10,
             countInStock: 6,
+            description: 'Bardzo dobre ziolo',
         },
         {
             _id: '3',
@@ -32,6 +34,7 @@ export default {
             rating: 4.5,
             numReviews: 20,
             countInStock: 6,
+            description: 'Bardzo dobre ziolo',
         },
         {
             _id: '4',
@@ -43,6 +46,7 @@ export default {
             rating: 2.5,
             numReviews: 10,
             countInStock: 6,
+            description: 'Bardzo dobre ziolo',
         },
         {
             _id: '5',
@@ -54,6 +58,7 @@ export default {
             rating: 5,
             numReviews: 15,
             countInStock: 6,
+            description: 'Bardzo dobre ziolo',
         },
         {
             _id: '6',
@@ -65,6 +70,7 @@ export default {
             rating: 4,
             numReviews: 12,
             countInStock: 6,
+            description: 'Bardzo dobre ziolo',
         },
     ],
 };
