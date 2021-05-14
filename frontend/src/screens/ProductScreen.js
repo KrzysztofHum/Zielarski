@@ -3,6 +3,12 @@ import { getProduct } from "../api";
 import Rating from "../components/Rating";
 
 const ProductScreen = {
+  after_render: () => {
+    const request = parseRequestUrl();
+    document.getElementById("add-button").addEventListener("click", () => {
+      document.location.hash = `/cart/${request.id}`;
+    });
+  },
   render: async () => {
     const request = parseRequestUrl();
     const product = await getProduct(request.id);
@@ -25,8 +31,8 @@ const ProductScreen = {
                         </li>
                         <li>
                             ${Rating.render({
-                            value: product.rating,
-                            text: `${product.numReviews} reviews`,
+                              value: product.rating,
+                              text: `${product.numReviews} reviews`,
                             })}
                         </li>
                         <li>
@@ -41,9 +47,10 @@ const ProductScreen = {
                 <div class="details-action">
                     <ul>
                         <li>Cena: ${product.price}zl</li>
-                        <li>Status: ${product.countInStock >0
-                        ?`<span class="success">W magazynie</span>`
-                        :`<span class="error">Niedostepny</span>`
+                        <li>Status: ${
+                          product.countInStock > 0
+                            ? `<span class="success">W magazynie</span>`
+                            : `<span class="error">Niedostepny</span>`
                         }
                         </li>
                         <li>
